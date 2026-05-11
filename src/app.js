@@ -4,6 +4,7 @@ require("dotenv").config();
 
 const allergyRoutes = require("./routes/allergyRoutes");
 const patientRoutes = require("./routes/patientRoutes");
+const evolutionNoteRoutes = require("./routes/evolutionNoteRoutes");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/patients", patientRoutes);
 app.use("/api/allergies", allergyRoutes);
+app.use("/api/evolution-notes", evolutionNoteRoutes);
 
 const PORT = process.env.PORT || 3000;
 
