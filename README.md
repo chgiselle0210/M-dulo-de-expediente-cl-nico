@@ -83,6 +83,7 @@ patients 1 ──── N evolution_notes
 patients 1 ──── N patient_allergies
 allergies 1 ──── N patient_allergies
 evolution_notes 1 ──── N clarification_notes
+```
 
 ## 3. Explicación de la lógica de no edición
 
