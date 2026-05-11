@@ -97,7 +97,7 @@ Esta estructura conserva el contenido inicial de la nota, la fecha exacta en que
 
 Para reforzar esta restricción, la lógica del backend debe validar que las notas de evolución solo puedan crearse una vez. A nivel de base de datos se recomienda evitar permisos de actualización y eliminación sobre la tabla evolution_notes para el usuario utilizado por la aplicación. Con esto, aunque ocurra un error en la API, la base de datos también ayuda a proteger la integridad de las notas clínicas.
 
-## Entregable 3: Análisis de seguridad
+# Entregable 3: Análisis de Seguridad
 
 La solución desarrollada contempla distintas medidas para proteger la integridad de la información clínica y reducir riesgos dentro de un entorno médico real. Una de las principales decisiones de seguridad fue implementar la inmutabilidad de las notas de evolución, evitando por completo endpoints de edición o eliminación (`PUT`, `PATCH` y `DELETE`) para este recurso. De esta forma, las notas médicas no pueden ser alteradas después de su registro, conservando trazabilidad clínica y evitando modificaciones indebidas en el historial del paciente. En caso de existir errores, el sistema únicamente permite agregar notas aclaratorias vinculadas a la nota original, manteniendo siempre intacto el registro inicial. Se utilizaron relaciones mediante claves foráneas en MySQL para preservar la integridad referencial entre pacientes, alergias, notas de evolución y aclaraciones.
 
