@@ -83,3 +83,15 @@ patients 1 ──── N evolution_notes
 patients 1 ──── N patient_allergies
 allergies 1 ──── N patient_allergies
 evolution_notes 1 ──── N clarification_notes
+
+## 3. Explicación de la lógica de no edición
+
+La restricción principal del módulo es que una nota de evolución, una vez guardada, no puede ser editada ni eliminada bajo ninguna circunstancia. Para cumplir con esta regla, la tabla evolution_notes se considera un registro inmutable dentro del sistema.
+
+Esto significa que el sistema solo permitirá operaciones de creación y consulta sobre las notas de evolución. No se expondrán endpoints de actualización ni eliminación para esta tabla. Por ejemplo, la API podrá tener una ruta para crear notas y otra para consultarlas, pero no tendrá rutas como PUT /evolution-notes/:id, PATCH /evolution-notes/:id o DELETE /evolution-notes/:id.
+
+En caso de que exista un error en una nota ya guardada, la información original no se modifica. En su lugar, se crea un nuevo registro en la tabla clarification_notes, vinculado mediante el campo evolution_note_id. De esta manera, la nota original permanece intacta y cualquier corrección queda documentada como una aclaración posterior.
+
+Esta estructura conserva el contenido inicial de la nota, la fecha exacta en que fue registrada y las aclaraciones que se agregaron después. Así, el historial médico mantiene una secuencia clara de lo que fue escrito originalmente y de lo que se añadió posteriormente como corrección o explicación.
+
+Para reforzar esta restricción, la lógica del backend debe validar que las notas de evolución solo puedan crearse una vez. A nivel de base de datos se recomienda evitar permisos de actualización y eliminación sobre la tabla evolution_notes para el usuario utilizado por la aplicación. Con esto, aunque ocurra un error en la API, la base de datos también ayuda a proteger la integridad de las notas clínicas.
