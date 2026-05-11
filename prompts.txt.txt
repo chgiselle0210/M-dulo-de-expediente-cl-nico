@@ -1,1 +1,35 @@
 Link de mi conversación con ChatGPT: https://chatgpt.com/share/6a02465a-dc14-83e8-ac9d-58e6668fd110
+
+Prompts utilizados:
+
+1.- ¡Hola, ChatGPT! En esta ocasión, requiero de tu apoyo para resolver una prueba técnica: módulo de expendiente clínico. Te comparto un archivo en PDF donde viene una explicación detallada, debes basarte de ese archivo para ayudarme a completarla correctamente. Debe de respetarse el orden de resolución que ahí se indica y yo, además, te solicito que lo resolvamos paso a paso y cuidando mucho el cumplimiento exacto de las instrucciones, ya que se está manipulando información clínica delicada. Como se observa, son tres entregables. ¡Muchas gracias y comencemos!
+
+2.- Perfecto, tu entendimiento del Entregable 1 es correcto, pero te vuelvo a compartir lo que se solicita de ese entregable para que sigas teniendo en cuenta el orden: Entregable 1: Documentación Técnica (Archivo PDF o Markdown) o Esquema de la base de datos: Tablas, campos y relaciones necesarias para resolver el problema. o Explicación de la lógica: Cómo tu estructura garantiza la restricción de "no edición". Recuerda que eso sería todo y que el Entregable 3, que también es un texto breve en el mismo Markdown, se hace hasta después de completar el Entregable 2, ¿de acuerdo? Solo te lo recuerdo para que mantengas el orden como se solicita. Pero sí, ya podemos elaborar el Entregable 1 en formato Markdown, como lo habías planteado. Recuerda: formato listo para pegar en el README.md de GitHub.
+
+3.- Muy bien, así lo llevo. Hasta ahorita y con base en el archivo Prueba Tecnica, en formato PDF, ¿qué es lo que llevamos correctamente resuelto?
+
+4.- Perfecto, eso quiere decir que debemos continuar con el Entregable 2. • Entregable 2: Código Fuente y Uso de IA o Los archivos de código fuente (Backend/API) con la solución implementada. o Un archivo de texto (prompts.txt) que contenga exactamente las instrucciones o "prompts" que utilizaste en la herramienta de IA (ChatGPT, Claude, etc.) para llegar a esta solución. Empecemos por los archivos de código fuente con la solución aplicada. Recuerda: paso a paso puedes indicarme qué ir realizando con las herramientas propuestas para esta fase del entregable. Considera que tengo instalado MySQL. Ya laboré la estructura en VS Code y ya vinculé la carpeta con Git y mi repositorio de GitHub que ya tengo elaborado. Si gustas, déjame te mando la captura con la estructura que elaboré. Ya con eso, podemos ir desarrollando el código. ¿Te parece bien?
+
+5.- Así tengo la estructura
+
+6.- Listo, continuemos. Recuerda: debe haber congruencia entre la documentación previa que hicimos en el formato Markdown y el código que vayamos a ir generando. El orden, la normalización y la coherencia de la base de datos propuesta también debe de aplicarse correctamente.
+
+7.- ¿Qué tal?
+
+8.- De acuerdo, hasta ahorita lo llevo así
+
+9.- (Es una captura de un error que me salió en Postman)
+
+10.- Cierto, no me había dado cuenta... ¿ahora, qué tal?
+
+11.- ¿Qué tal?
+
+12.- Listo, ¿qué tal?
+
+13.- Muy bien, ya lo hice
+
+14.- Parece que todo en orden
+
+15.- Perfecto. Yo me encargo de elaborar el archivo prompts.txt, ya que debo incluir cada prompt que te he enviado en esta conversación. Pasemos a elaborar el Entregable 3 (seguridad): • Entregable 3: Análisis de Seguridad (Texto breve en el mismo PDF/Markdown) o Una justificación breve (1 o 2 párrafos) explicando por qué tu código es seguro para un entorno médico real y qué previsiones tomaste para evitar fallos. Recuerda: debe estar en formato md (Markdown) para únicamente copiarlo y pegarlo en el README. Aunque sea, debe tener dos párrafos de extensión, tómalo en cuenta.
+
+16.- Muy bien. Una última cosa: debo justificar por qué utilice JavaScript en lugar de PHP en el README, formato ms (Markdown). En mi caso, es porque estoy más acostumbrada a trabajar con este lenguaje de programación debido a algunos bootcamps que he completado mediante este lenguaje y sus librerías.
