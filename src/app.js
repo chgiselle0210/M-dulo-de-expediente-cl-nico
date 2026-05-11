@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
+const allergyRoutes = require("./routes/allergyRoutes");
 const patientRoutes = require("./routes/patientRoutes");
 
 const app = express();
@@ -16,6 +17,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/patients", patientRoutes);
+app.use("/api/allergies", allergyRoutes);
 
 const PORT = process.env.PORT || 3000;
 
